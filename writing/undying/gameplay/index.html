@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>The Undying - Gameplay</title>
+      <link rel="stylesheet" href="../../main.css">
+      <script>
+      function onload() {
+        var paragraphs = document.getElementsByTagName("p");
+        for(var i = 0; i < paragraphs.length; i++)
+        {
+          paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        }
+      }
+      </script>
+    </head>
+    <body onload="onload()">
+      <h1>Gameplay Elements</h1>
+      <p>Temperature
+- You have a value indicating your temperature which goes from -100 to +100.
+- You also have a negative and positive temperature thresholds that with the default clothes are something like -15 and +15. The naked default values sit at something like 0 and 30.
+
+- If your temperature is below the negative threshold value, you start building up hypothermia, but your negative temperature threshold value starts very slowly crawling down, since you're getting used to the cold.
+- You also have a temporary variant of the above value that caps at 150% of the NTT (negative temperature threshold) value, and gets reset when your temperature goes above the NTT. While your temperature is below the NTT but above the temporary NTT, you still build up hypothermia, but at a much slower rate.
+- If your temperature is below the NTT and you stop moving for longer than something like 5 seconds, your hypothermia build up becomes faster.
+
+- If your temperature is above your PTT (positive temperature threshold) you start losing your maximum stamina based on a percentage described by the following equation: percentage = 1 - (Temperature - PTT) / 50
+- If your temperature reaches your PTT + 50, you die of hyperthermia. However, as established before, your temperature cannot go above 100, meaning if you have a PTT greater than 50, you cannot die in hyperthermia.
+- While your temperature is above your PTT, your PTT very slowly starts increasing.
+
+- Clothing can change these values. For example, warm clothing decreases your both your NTT and PTT, while light clothes only decrease them slightly. What this means, is that when you're naked, both values have to be high.</p>
+    </body>
+</html>

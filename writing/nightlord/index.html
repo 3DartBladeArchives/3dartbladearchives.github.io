@@ -1,0 +1,23 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Éjkirály</title>
+      <link rel="stylesheet" href="../../main.css">
+      <script>
+      function onload() {
+        var paragraphs = document.getElementsByTagName("p");
+        for(var i = 0; i < paragraphs.length; i++)
+        {
+          paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        }
+      }
+      </script>
+    </head>
+    <body onload="onload()">
+      <h1>Az Éjkirály</h1>
+      <a href="nightone" class="entry">Első Éj</a>
+      <a href="nighttwo" class="entry">Második Éj</a>
+      <a href="nightthree" class="entry">Harmadik Éj</a>
+      <a href="nightfour" class="entry">Negyedik Éj</a>
+    </body>
+</html>

@@ -1,8 +1,31 @@
 <html>
-    <head>
-    </head>
-    <body>
-        <p>hi</p>
-        <a href="writing">writing</a>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Archives</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+    function onload() {
+      var paragraphs = document.getElementsByTagName("p");
+      for(var i = 0; i < paragraphs.length; i++)
+      {
+        paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+      }
+    }
+    </script>
+  </head>
+  <body onload="onload()">
+    <h1>If I Die And Nobody Remembers Me, At Least This Website Will</h1>
+    <b><p>Born in 2004 as Ferenc Attila Cseh in Hungary, later known as Alexa Róza Cseh.
+
+    I was always a creative person, with the ambition of making art that moves people, that resonates with others, that makes them feel seen, that motivates them, that inspires them, that helps them through the hard times.
+    If you found this website, that probably means I didn't succeed.
+
+
+  </p></b>
+    <a href="writing">
+      <div class="entry" style="height: auto;">
+        <h2>writing</h2>
+      </div>
+    </a>
+  </body>
 </html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Dumpster</title>
+      <link rel="stylesheet" href="../../main.css">
+      <script>
+      function onload() {
+        var paragraphs = document.getElementsByTagName("p");
+        for(var i = 0; i < paragraphs.length; i++)
+        {
+          paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        }
+      }
+      </script>
+    </head>
+    <body onload="onload()">
+      <h1>Dumpster</h1>
+      <a href="void" class="entry">Void</a>
+      <a href="paperview" class="entry">Paperview</a>
+      <a href="the_bard_on_fire_-_review" class="entry">The Bard on Fire - Review</a>
+      <a href="righteous_hand_of_god" class="entry">Righteous Hand Of God</a>
+      <a href="shes_playing_piano" class="entry">She's Playing Piano</a>
+    </body>
+</html>

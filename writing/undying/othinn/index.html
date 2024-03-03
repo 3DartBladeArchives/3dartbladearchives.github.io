@@ -1,0 +1,22 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>The Undying - Othinn Emana</title>
+      <link rel="stylesheet" href="../../main.css">
+      <script>
+      function onload() {
+        var paragraphs = document.getElementsByTagName("p");
+        for(var i = 0; i < paragraphs.length; i++)
+        {
+          paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        }
+      }
+      </script>
+    </head>
+    <body onload="onload()">
+      <h1>Othinn Emana</h1>
+      <p>Othinn Emana is the all knowing historian of Fossa. He always lived in solitude alongside his books in order to learn as much about the world as possible. As a result, he accepted the loss of community long before the maddening plague started, so he stayed sane.
+
+You can show any item to Othinn and he will tell you everything he knows about it, giving you a description of that item.</p>
+    </body>
+</html>

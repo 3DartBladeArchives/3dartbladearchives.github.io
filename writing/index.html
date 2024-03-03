@@ -1,15 +1,62 @@
 <html>
   <head>
-    <link rel="stylesheet" href="/main.css">
+    <meta charset="utf-8">
+    <title>Writing</title>
+    <link rel="stylesheet" href="../main.css">
+    <script>
+    function onload() {
+      var paragraphs = document.getElementsByTagName("p");
+      for(var i = 0; i < paragraphs.length; i++)
+      {
+        paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+      }
+    }
+    </script>
   </head>
-  <body>
-    <div class="entry">
-      <img src="dumpster/cover.png" alt="cover" class="float-left thumbnail">
-      <div class="float-left">
-        <h2>Dumpster</h2>
-        <p>Dumpster - A collection of short stories, broken dreams, unrealised potential and pain.</p>
+  <body onload="onload()">
+    <a href="dumpster" target="_blank">
+      <div class="entry">
+        <img src="dumpster/cover.png" alt="cover" class="float-left thumbnail">
+        <div class="description float-left">
+          <h2>Dumpster</h2>
+          <b><p class="indent-10">Dumpster - A collection of short stories, broken dreams, unrealised potential and pain.</p></b>
+        </div>
       </div>
-    </div>
-    <p>nothing here yet</p>
+    </a>
+
+    <a href="cmmihoahliaw" target="_blank">
+      <div class="entry">
+        <img src="cmmihoahliaw/cover.png" alt="cover" class="float-left thumbnail">
+        <div class="description float-left">
+          <h2>Correcting my mistake in hopes of a happy life in another world</h2>
+          <b><p class="indent-10">"Ending my own life was my biggest mistake, but I got a chance to right this wrong in another life."
+          A story I started writing after watching the anime called "The world's finest assassin [...]". The entire story is improvised. I had no overview of what I'm gonna do whatsoever. That's why it wasn't very good and I ended it prematurely. I'm not too proud of this.
+        Started in October of 2022</p></b>
+        </div>
+      </div>
+    </a>
+
+    <a href="nightlord" target="_blank">
+      <div class="entry">
+        <img src="nightlord/cover.png" alt="cover" class="float-left thumbnail">
+        <div class="description float-left">
+          <h2>Az Éjkirály</h2>
+          <b><p class="indent-10">"Márk és Maya kalandos életét követheted nyomon, ahogy az éji rémek elől menekülnek."
+          The first thing I ever wrote. It's completely written in Hungarian and is full of spelling and grammar mistakes. Also never completed. I don't like it.
+        Started in October of 2019</p></b>
+        </div>
+      </div>
+    </a>
+
+    <a href="undying" target="_blank">
+      <div class="entry">
+        <img src="undying/cover.png" alt="cover" class="float-left thumbnail">
+        <div class="description float-left">
+          <h2>The Undying</h2>
+          <b><p class="indent-10">Notes for a game's story I was working on for years. This is the first time this sees the light of day. If I'm dead, feel free to take this and do with it what you want. It's free real estate. But only if I'm dead!
+        Started in March of 2023</p></b>
+        </div>
+      </div>
+    </a>
   </body>
 </html>
